@@ -17,3 +17,19 @@ docker-compose up --build
 
 # Stopping + cleanup
 docker-compose down
+
+## API
+
+Simple notes API using Django REST Framework (DRF).
+Includes basic CRUD functionality for notes: 'title', 'content'
+
+with tests using Djangos 'TestCase' and DRF's 'APIClient'
+
+### Example (POST)
+
+POST /api/notes/
+```json
+{
+    "title":"Test",
+    "content":"This is a test note"
+}
